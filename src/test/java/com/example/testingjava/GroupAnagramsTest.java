@@ -3,7 +3,6 @@ package com.example.testingjava;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,7 +18,7 @@ public class GroupAnagramsTest {
 
     @Test
     public void groupAnagrams_arrayStringsIsEmpty_returnEmptyListOfStrings() {
-        List<List<String>> expectedResult = new ArrayList<>();
+        List<List<String>> expectedResult = List.of(List.of(""));
         assertEquals(anagram.groupAnagrams(new String[]{""}), expectedResult);
     }
 
